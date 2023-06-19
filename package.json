@@ -1,0 +1,11 @@
+{
+  "name": "skyblog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "sass": "sass --watch ./css/style.scss:./css/style.css"
+  },
+  "author": "",
+  "license": "ISC"
+}
