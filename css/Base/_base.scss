@@ -258,7 +258,8 @@ body{
       /* margin: 0 0.5em; */
       display: flex;
       flex-direction: column;
-      /* flex: 3; */
+      flex: 4;
+      
       .article{
         margin-bottom: 10px;
       background-color: pink;
@@ -524,13 +525,40 @@ body{
   }
 }
 
-@media all and (min-width: 768px) and (max-width: 910px){
-  // mettre en display block si on veut que tout saligne
-  // a partir 668 enleve les margin des bouton de nav
+@media screen and (max-width: 760px){
+  .img_article , .img_article img{
+    width: 100%;
+  }
+  body main .container{
+    flex-direction: column;
+  }
+  body main .colonne_center {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  body main .colonne_center .article {
+    width: 100%;
+  }
+  body header nav .nav_right , body header nav .nav_right_search {
+    margin-right: 0;
+    width: initial;
+  }
+  body header nav .nav_left_img {
+    
+    margin-right: 0;
+  }
+  body header nav .nav_left {
+    width: 10%;
+  }
+  body main .colonne_left, body main .colonne_right {
+    min-height: min-content;
+    height: fit-content;
+  }
+  body main .colonne_left_dtl_bottom {
+    display: none;
+  }
+  body main .colonne_left h2, body main .colonne_left h3, body main .colonne_left p, body main .colonne_center h2, body main .colonne_center h3, body main .colonne_center p, body main .colonne_right h2, body main .colonne_right h3, body main .colonne_right p{
+    font-size: 1em;
+  }
 }
-// @media only screen and (min-width: 895px){
-//     main{
-//       width: 100vw;
-//     }
-// }
-  
